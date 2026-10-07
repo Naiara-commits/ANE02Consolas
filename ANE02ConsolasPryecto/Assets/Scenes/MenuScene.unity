@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422043110}
   - component: {fileID: 422043111}
+  - component: {fileID: 422043112}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -163,6 +164,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c078f244dd2984e9828f06a09aea90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScManager
+--- !u!114 &422043112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422043109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db544a1c28ce4b4ba3200a159774733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIController
+  InpActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &525909013
 GameObject:
   m_ObjectHideFlags: 0
