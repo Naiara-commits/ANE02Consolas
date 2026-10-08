@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
             {
                 Vector3 direct = new Vector3(mLook.x, 0f, mLook.y);
                 Quaternion targetRotation = Quaternion.LookRotation(direct);
+                Debug.Log($"Rotando hacia: {targetRotation.eulerAngles}");
                 rb.MoveRotation(Quaternion.RotateTowards(rb.rotation, targetRotation, rotSpeed * Time.fixedDeltaTime));
             }
         }
