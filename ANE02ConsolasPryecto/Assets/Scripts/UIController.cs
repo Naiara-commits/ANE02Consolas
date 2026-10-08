@@ -16,6 +16,7 @@ public class UIController : MonoBehaviour
 
     private Vector2 mNavigate;
 
+
     private bool isController = false;
 
 
@@ -55,5 +56,9 @@ public class UIController : MonoBehaviour
     {
         mNavigate = Navigate.ReadValue<Vector2>();
         
+    }
+    private void SelectButton()
+    {
+
     }
 }
