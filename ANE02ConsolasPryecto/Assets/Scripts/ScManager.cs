@@ -1,8 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+using System.Collections;
+
 
 public class ScManager : MonoBehaviour
 {
+    public InputActionAsset InpActions;
+    private InputAction Cancel;
+
+    public void Awake()
+    {
+        Cancel = InputSystem.actions.FindAction("Cancel");
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,7 +22,10 @@ public class ScManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Cancel.WasPressedThisFrame())
+        {
+            SceneManager.LoadScene("MenuScene");
+        }
     }
     
     public void Game()
@@ -23,4 +36,5 @@ public class ScManager : MonoBehaviour
     {
         Application.Quit();
     }
+
 }
